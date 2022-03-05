@@ -7,13 +7,13 @@ const typeDefs = gql`
     slug: String!
   }
 
-  type Status {
-    status: String!
-  }
-
   # Queries
   type Query {
     getLink: Link!
+  }
+
+  type Mutation {
+    insertLink(url: String!, slug: String!): Link!
   }
 `;
 
